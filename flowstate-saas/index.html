@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowState AI // High-Performance Workflow Orchestration</title>
+    <meta name="description" content="Streamline your development, design, and product planning workflows with the power of localized AI task coordination.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cyber Background Mesh -->
+    <div class="cyber-grid"></div>
+    <div class="glow-orb orb-primary"></div>
+    <div class="glow-orb orb-secondary"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-symbol"><i class="fa-solid fa-wind"></i></span> FlowState
+        </div>
+        <nav class="nav-menu">
+            <a href="#features" class="nav-item">Features</a>
+            <a href="#demo" class="nav-item">Interactive Demo</a>
+            <a href="#pricing" class="nav-item">Pricing</a>
+            <a href="#demo" class="nav-btn">Try Demo Free</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <span class="badge">Workflow Orchestration</span>
+            <h1 class="hero-title">
+                Coordinate your work <br>
+                with <span class="highlight">liquid flow.</span>
+            </h1>
+            <p class="hero-desc">
+                FlowState is a task management platform designed for tech teams. No bloat, no lag, just speed. Powered by minimal UX patterns and keyboard-first shortcuts.
+            </p>
+            <div class="hero-actions">
+                <a href="#demo" class="btn btn-primary">Try Interactive Tool <i class="fa-solid fa-bolt"></i></a>
+                <a href="#features" class="btn btn-secondary">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Interactive Demo Widget (The Core Interactive Component) -->
+        <section class="demo-section" id="demo">
+            <div class="demo-header">
+                <h2>Experience FlowState</h2>
+                <p>Try the real task coordinator below. Filter items, add new ones, and toggle completion states in real-time.</p>
+            </div>
+
+            <!-- Interactive Board Dashboard Widget -->
+            <div class="dashboard-widget glass-card">
+                <!-- Widget Sidebar / Filters -->
+                <aside class="widget-sidebar">
+                    <div class="user-profile">
+                        <div class="avatar">FS</div>
+                        <div class="user-info">
+                            <span class="name">Team Workspace</span>
+                            <span class="role">Free Plan Demo</span>
+                        </div>
+                    </div>
+                    <nav class="widget-nav">
+                        <button class="filter-btn active" data-category="all"><i class="fa-solid fa-list"></i> All Tasks</button>
+                        <button class="filter-btn" data-category="design"><i class="fa-solid fa-compass-drafting"></i> Design</button>
+                        <button class="filter-btn" data-category="code"><i class="fa-solid fa-code"></i> Engineering</button>
+                        <button class="filter-btn" data-category="marketing"><i class="fa-solid fa-bullhorn"></i> Growth</button>
+                    </nav>
+                </aside>
+
+                <!-- Widget Main Workspace Area -->
+                <main class="widget-workspace">
+                    <div class="workspace-header">
+                        <h3>Tasks Board</h3>
+                        <span class="task-count" id="task-counter">3 active tasks</span>
+                    </div>
+
+                    <!-- Input to add new tasks -->
+                    <div class="task-input-bar">
+                        <i class="fa-solid fa-plus-circle input-icon"></i>
+                        <input type="text" id="new-task-input" placeholder="Create a task (Press Enter to save)..." aria-label="Task input">
+                        <select id="new-task-category" class="task-category-select">
+                            <option value="design">Design</option>
+                            <option value="code">Engineering</option>
+                            <option value="marketing">Growth</option>
+                        </select>
+                    </div>
+
+                    <!-- Tasks List Container -->
+                    <ul class="tasks-list" id="tasks-list">
+                        <!-- Task 1 -->
+                        <li class="task-item" data-category="design">
+                            <div class="task-left">
+                                <button class="checkbox-btn" aria-label="Complete task"><i class="fa-solid fa-check"></i></button>
+                                <span class="task-text">Draft landing page copywriting & assets</span>
+                            </div>
+                            <span class="category-pill pill-design">Design</span>
+                        </li>
+                        <!-- Task 2 -->
+                        <li class="task-item" data-category="code">
+                            <div class="task-left">
+                                <button class="checkbox-btn" aria-label="Complete task"><i class="fa-solid fa-check"></i></button>
+                                <span class="task-text">Refactor payment checkout API endpoints</span>
+                            </div>
+                            <span class="category-pill pill-code">Engineering</span>
+                        </li>
+                        <!-- Task 3 -->
+                        <li class="task-item" data-category="marketing">
+                            <div class="task-left">
+                                <button class="checkbox-btn" aria-label="Complete task"><i class="fa-solid fa-check"></i></button>
+                                <span class="task-text">Optimize asset loading speed for better SEO</span>
+                            </div>
+                            <span class="category-pill pill-marketing">Growth</span>
+                        </li>
+                    </ul>
+                </main>
+            </div>
+        </section>
+
+        <!-- Features Bento Grid -->
+        <section class="features-section" id="features">
+            <span class="sec-label">// WHY FLOWSTATE</span>
+            <h2>Productivity, refined.</h2>
+            
+            <div class="features-grid">
+                <!-- Feature 1: Large -->
+                <div class="feature-card f-large glass-card">
+                    <div class="f-icon"><i class="fa-solid fa-gauge"></i></div>
+                    <h3>Sub-millisecond Performance</h3>
+                    <p>Built with efficiency in mind. Every state update, transition, and keystroke takes less than 1ms. Keep your workflow fluid without any browser lag.</p>
+                </div>
+                <!-- Feature 2: Small -->
+                <div class="feature-card f-small glass-card">
+                    <div class="f-icon"><i class="fa-solid fa-keyboard"></i></div>
+                    <h3>Keyboard First</h3>
+                    <p>Access navigation, task creation, and filtering via customizable hotkeys.</p>
+                </div>
+                <!-- Feature 3: Small -->
+                <div class="feature-card f-small glass-card">
+                    <div class="f-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Cycle Analytics</h3>
+                    <p>Clean analytics dashboards to track your development progress over time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="pricing-header">
+                <span class="sec-label">// PRICING</span>
+                <h2>Simple pricing for scaling teams</h2>
+                <!-- Monthly/Yearly Toggle -->
+                <div class="billing-toggle">
+                    <span class="toggle-label active" id="monthly-label">Monthly</span>
+                    <button class="toggle-switch" id="billing-toggle-btn" aria-label="Toggle Billing Interval">
+                        <span class="toggle-knob"></span>
+                    </button>
+                    <span class="toggle-label" id="yearly-label">Yearly <span class="discount-badge">Save 20%</span></span>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="price-card glass-card">
+                    <h3>Developer</h3>
+                    <p class="plan-desc">For individuals and small pet projects.</p>
+                    <div class="price-wrap">
+                        <span class="currency">$</span>
+                        <span class="price-val" id="dev-price">0</span>
+                        <span class="interval">/mo</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Unlimited local tasks</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Standard cycle charts</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Keyboard shortcuts</li>
+                    </ul>
+                    <a href="#demo" class="btn btn-secondary pricing-btn">Get Started</a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="price-card glass-card pro-featured">
+                    <div class="popular-tag">MOST POPULAR</div>
+                    <h3>Team Studio</h3>
+                    <p class="plan-desc">For scaling teams and growing startups.</p>
+                    <div class="price-wrap">
+                        <span class="currency">$</span>
+                        <span class="price-val" id="team-price">12</span>
+                        <span class="interval">/mo</span>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Everything in Developer</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Infinite real-time members</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Git repository sync integrations</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Extended AI cycle analytics</li>
+                    </ul>
+                    <a href="#demo" class="btn btn-primary pricing-btn">Start Free Trial</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 FlowState AI. All rights reserved.</p>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
