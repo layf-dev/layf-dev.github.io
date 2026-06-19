@@ -54,6 +54,7 @@ const commands = {
     help: () => `Available commands:<br>
     - <span class="result-msg">about</span> : About me, interests, and goals<br>
     - <span class="result-msg">skills</span> : Tech stack and automation skills<br>
+    - <span class="result-msg">projects</span> : Show key portfolio cases<br>
     - <span class="result-msg">play</span> : Play Kanye West - Can't Tell Me Nothing<br>
     - <span class="result-msg">pause</span> : Pause audio playback<br>
     - <span class="result-msg">clear</span> : Clear the terminal screen`,
@@ -70,6 +71,13 @@ const commands = {
     - <span class="result-msg">Web (HTML/CSS/JS)</span>: building modern web interfaces and services.<br>
     Leveraging programming as a tool to solve routine problems and build custom toolkits.`,
     
+    projects: () => `<b>My Key Projects:</b><br>
+    - <span class="result-msg">SERA Kitchen & Bar</span>: Cinematic landing page for an upscale restaurant.<br>
+    - <span class="result-msg">FlowState AI</span>: SaaS dashboard and task coordinator with interactive UI.<br>
+    - <span class="result-msg">Secure Cloud Locker</span>: Zero-Knowledge E2EE browser-based cloud storage.<br>
+    - <span class="result-msg">Docker Security Auditor</span>: Docker image static analysis tool.<br>
+    - <span class="result-msg">Smart Business Helper Bot</span>: CRM integration Telegram bot.<br>
+    - <span class="result-msg">Summer Camp Rating System</span>: Vue 3 scoreboard and dashboard.`,
 
     clear: () => {
         terminalOutput.innerHTML = '';
@@ -80,7 +88,7 @@ const commands = {
 let commandHistory = [];
 let historyIndex = -1;
 
-const availableCommands = ["help", "about", "skills", "play", "pause", "clear"];
+const availableCommands = ["help", "about", "skills", "projects", "play", "pause", "clear"];
 
 terminalInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
